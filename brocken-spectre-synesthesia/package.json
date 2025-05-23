@@ -18,3 +18,22 @@
     "vite": "^6.2.0"
   }
 }
+{
+  "name": "brocken-spectre-synesthesia",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=index.js --format=esm --jsx=automatic --loader:.ts=tsx --external:react --external:react-dom/* --external:react/*",
+    "dev": "esbuild index.tsx --bundle --outfile=index.js --format=esm --jsx=automatic --loader:.ts=tsx --external:react --external:react-dom/* --external:react/* --servedir=. --watch"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "typescript": "^5.3.3"
+  }
+}
+
